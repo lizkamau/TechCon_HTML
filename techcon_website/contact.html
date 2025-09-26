@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Contact Us - TechCon 2024</title>
-  <style>
-    /* Simple responsive map */
-    .map-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-    }
-    .map-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>TechCon 2024 - Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
@@ -41,16 +26,61 @@
     <!-- Contact Information -->
     <section>
       <h2>Get in Touch</h2>
-      <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
-      <p>Follow us on:</p>
+      <p>
+        For inquiries, please email us at:
+        <a href="mailto:email@example.com">email@example.com</a>
+      </p>
+
+      <h3>Follow Us</h3>
       <ul>
         <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
         <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
         <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
       </ul>
+    </section>
+
+    <!-- Embedded Map -->
+    <section>
+      <h2>Our Venue</h2>
+      <div style="width:100%; height:400px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019330586566!2d-122.41941568468186!3d37.7749292797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809cbae1c6fb%3A0x8a0b5f3c21f7b6b!2sSan%20Francisco%20Conference%20Center!5e0!3m2!1sen!2sus!4v1695827312345!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <h2>Contact Us Form</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
   <!-- Footer -->
   <footer>
-    <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
   </footer>
 </body>
 </html>
